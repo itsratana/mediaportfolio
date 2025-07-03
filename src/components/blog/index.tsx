@@ -8,6 +8,13 @@ import VideoPopup from '../../modals/VideoPopup';
 import ScrollTop from '../common/ScrollTop';
 import ScrollToTop from '../common/ScrollToTop';
 import CustomCursor from '../common/CustomCursor';
+import BlogDetailsArea from '../blog-details/BlogDetailsArea';
+import ResumeArea from '../about/ResumeArea';
+import SkillArea from '../about/SkillArea';
+import SingleProjectArea from '../single-project/SingleProjectArea';
+import TestimonoalArea from '../home/TestimonoalArea';
+import BrandArea from '../home/BrandArea';
+import BlogArea from '../home/BlogArea';
 
 export default function Blog() {
 
@@ -22,6 +29,13 @@ export default function Blog() {
           <main>
             <Breadcrumb title="Blogs" style_4={true} />
             <PostboxArea setIsVideoOpen={setIsVideoOpen} />
+            <BlogDetailsArea />
+            <ResumeArea />
+            <SkillArea />
+            <SingleProjectArea />
+            <TestimonoalArea />
+            <BrandArea />
+            <BlogArea />
           </main>
           <FooterOne />
         </div>

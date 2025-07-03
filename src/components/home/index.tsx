@@ -11,6 +11,7 @@ import FooterOne from "../../layouts/footers/FooterOne";
 import ScrollTop from "../common/ScrollTop";
 import CustomCursor from "../common/CustomCursor";
 import ScrollToTop from "../common/ScrollToTop";
+import SkillArea from "../about/SkillArea";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
             {/* <BrandArea /> */}
             <section id="about">
               <AboutArea />
+              <SkillArea />
             </section>
             <section id="service">
               <ServiceArea />

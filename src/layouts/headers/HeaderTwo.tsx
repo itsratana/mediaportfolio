@@ -21,7 +21,7 @@ export default function HeaderTwo() {
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="back-area">
                     <div className="back">
-                      <a href="/#service" className="text-black">Back To Home</a>
+                      <a href="/" className="text-black">Back To Home</a>
                     </div>
                   </div>
                 </div>

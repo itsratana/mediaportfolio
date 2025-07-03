@@ -20,7 +20,7 @@ export default function ServiceArea() {
                   <i className="ri-arrow-right-up-line"></i>
                   <h5>01</h5>
                   <h4>Event Highlight</h4>
-                  <p></p>
+                  <p> Capturing the most memorable moments of your event with cinematic edits and emotional impact.</p>
                 </div>
               </a>
             </div>
@@ -31,7 +31,7 @@ export default function ServiceArea() {
                   <i className="ri-arrow-right-up-line"></i>
                   <h5>02</h5>
                   <h4>Promote Video</h4>
-                  <p>Blend of artistic intuition with strategic insight to craft a visual identity.</p>
+                  <p>Crafting compelling promotional videos that elevate your brand, product, or campaign.</p>
                 </div>
               </a>
             </div>
@@ -43,7 +43,7 @@ export default function ServiceArea() {
                   <i className="ri-arrow-right-up-line"></i>
                   <h5>03</h5>
                   <h4>Photography</h4>
-                  <p>Blend of functionality with aesthetics to create delightful experience.</p>
+                  <p>Capture and Delivering high-quality photos for events, portraits, products, or social media content.</p>
                 </div>
               </a>
             </div>
@@ -55,7 +55,7 @@ export default function ServiceArea() {
                   <i className="ri-arrow-right-up-line"></i>
                   <h5>04</h5>
                   <h4>Camera Operating</h4>
-                  <p>Blend of strategic thinking and artistic finesse to craft a visual identity that goes beyond aesthetics.</p>
+                  <p>Professional camera work for live events, interviews, and video productions with technical precision.</p>
                 </div>
               </a>
             </div>
