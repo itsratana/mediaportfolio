@@ -1,5 +1,14 @@
  
 export default function HeroArea() {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+    if (link.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(link);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
   return (
     <>
       <section id="home" className="main-hero-area">
@@ -46,9 +55,14 @@ export default function HeroArea() {
             <div className="col-lg-3 pt-30">
               <div className="hero-content wow fadeInUp delay-0-4s">
                 <p>Hi, I’m Ratana, a freelance Videographer and Multimedia passionate in filmmaking and animation.</p>
-                <a className="theme-btn" href="">Get In touch</a>
+                <a 
+                  className="theme-btn" 
+                  href="#contact"
+                  onClick={(e) => handleClick(e, '#contact')}
+                >
+                  Get In touch
+                </a>
               </div>
-
             </div>
           </div>
         </div>
