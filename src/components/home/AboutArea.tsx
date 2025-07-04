@@ -4,20 +4,8 @@ import Count from '../common/Count'
 const counter_data = [
   {
     id: 1,
-    title: 'Years of Experience',
+    title: 'Years of Freelancing Experience',
     count: 2,
-    cls: "plus",
-  },
-  {
-    id: 2,
-    title: 'Completed Work',
-    count: 100,
-    cls: "plus",
-  },
-  {
-    id: 3,
-    title: 'Clients',
-    count: 50,
     cls: "plus",
   },
 ]

@@ -13,35 +13,49 @@ interface DataType {
 const portfolio_data:DataType[] = [
   {
     id: 1,
-    col: "6",
-    video: "https://www.youtube.com/watch?v=xFx21G73AQU",
-    title: "Resort Showcase",
-    category: "Promote Video",
+    col: "4",
+    video: "https://www.youtube.com/watch?v=XmUZyxXN_eY",
+    title: "Engagement Ceremony",
+    category: "Ceremony",
   },
   {
     id: 2,
-    col: "6",
-    video: "https://www.youtube.com/watch?v=DQCwo_WtLv8",
-    title: "Wurkz Special Volleyball Cup 4x4 Season 2 Semi-Final",
+    col: "4",
+    video: "https://www.youtube.com/watch?v=jvmaQrV-9Ug",
+    title: "Volleyball Friendly Match Highlight",
     category: "Sport",
   },
   {
     id: 3,
-    col: "6",
-    video: "https://www.youtube.com/watch?v=ezk2RA8mfo0",
-    title: "Short Video",
-    category: "Short",
+    col: "4",
+    video: "https://www.youtube.com/watch?v=v09DtFYzG9I",
+    title: "Code-C Tech Expo 2023",
+    category: "Conference & Expo",
   },
   {
     id: 4,
-    col: "6",
-    video: "https://www.youtube.com/watch?v=yg67dFDGLrw",
-    title: "Techo League Season 2025 Final",
+    col: "4",
+    video: "https://www.youtube.com/watch?v=CJ__sZwC1So",
+    title: "Volleyball Event Kampong Cham",
     category: "Sport",
+  },
+  {
+    id: 5,
+    col: "4",
+    video: "https://www.youtube.com/watch?v=nSOvzSsZQFo",
+    title: "Startup Launchpad 2024",
+    category: "Conference",
+  },
+  {
+    id: 6,
+    col: "4",
+    video: "https://www.youtube.com/watch?v=",
+    title: "Wurkz Special Volleyball Cup 4x4 Season 2 Press Conference",
+    category: "Conference",
   },
 ];
 
-export default function PromoteVideoArea() {
+export default function EventHighlightArea() {
   const [isOpen, setIsOpen] = useState(false);
   const [currentVideo, setCurrentVideo] = useState<string | null>(null);
 
@@ -70,7 +84,7 @@ export default function PromoteVideoArea() {
               </div>
             </div>
           </div>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row g-4 portfolio-grid justify-content-center">
             {portfolio_data.map((item, i) => (
               <div key={i} className={`col-md-6 col-xl-${item.col} portfolio-item`}>

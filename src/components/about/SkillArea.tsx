@@ -19,9 +19,8 @@ export default function SkillArea() {
                   <div className="row">
                     <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                       <div className="skill-item wow fadeInUp delay-0-2s">
-                        <img src="/assets/images/skills/skill1.png" alt="Skill" style={{ marginRight: "10px", width: "70px" }} />
-                        <img src="/assets/images/skills/skill5.png" alt="Skill" style={{ width: "70px" }}/>
-                        <h5>Photoshop & Lightroom</h5>
+                        <img src="/assets/images/skills/skill1.png" alt="Skill" style={{ width: "70px" }} />
+                        <h5>Photoshop</h5>
                       </div>
                     </div>
                     <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
@@ -40,6 +39,12 @@ export default function SkillArea() {
                       <div className="skill-item wow fadeInUp delay-0-5s">
                         <img src="/assets/images/skills/skill4.png" alt="Skill" style={{ width: "70px" }}/>
                         <h5>Davinci Resolve</h5>
+                      </div>
+                    </div>
+                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
+                      <div className="skill-item wow fadeInUp delay-0-5s">
+                        <img src="/assets/images/skills/skill5.png" alt="Skill" style={{ width: "70px" }}/>
+                        <h5>Lightroom</h5>
                       </div>
                     </div>
                   </div>

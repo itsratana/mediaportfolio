@@ -93,7 +93,7 @@ export default function PhotographyArea() {
                   style={{ cursor: "pointer" }}
                   onClick={() => handleImagePopup(i)} className="work-popup">
                   <div className="portfolio-box">
-                    <img src={item.image} alt="" style={{ height: "auto"}} data-rjs="2" />
+                    <img src={item.image} alt="" style={{ height: "auto"}} data-rjs="2" loading="lazy"/>
                     <span className="portfolio-category">{item.category}</span>
                     <div className="portfolio-caption">
                       <h1>{item.title}</h1>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import UseSticky from "../../hooks/UseSticky";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import NavMenu from "./NavMenu";
 import Sidebar from "../../components/common/Sidebar";
 
@@ -20,8 +20,8 @@ export default function HeaderOne() {
               <div className="row align-items-center">
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="logo-area">
-                    <div className="logo">
-                      <Link to="/"><img src="/assets/images/logo.png" alt="" /></Link>
+                    <div className="logo hero-content">
+                      <a href="/">Ratana</a>
                     </div>
                   </div>
                 </div>

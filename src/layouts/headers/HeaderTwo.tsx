@@ -11,6 +11,12 @@ export default function HeaderTwo() {
   const { sticky } = UseSticky()
   const [open, setOpen] = useState(false);
 
+  const handleBackToHome = () => {
+    // window.history.back();
+    localStorage.setItem('scrollTo', 'service');
+    window.location.href = '/';
+  }
+
   return (
     <>
       <header className={`main-header ${sticky ? 'fixed-header' : ''}`}>
@@ -21,7 +27,8 @@ export default function HeaderTwo() {
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="back-area">
                     <div className="back">
-                      <a href="/" className="text-black">Back To Home</a>
+                      {/* <a href="/#service" className="text-black">Back To Home</a> */}
+                      <button onClick={handleBackToHome} className="text-black">Back To Home</button>
                     </div>
                   </div>
                 </div>

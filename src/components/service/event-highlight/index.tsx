@@ -5,6 +5,7 @@ import ScrollTop from '../../common/ScrollTop'
 import ScrollToTop from '../../common/ScrollToTop'
 import HeaderTwo from '../../../layouts/headers/HeaderTwo'
 import CustomCursor from '../../common/CustomCursor'
+import EventHighlightArea from './EventHighlightArea'
 
 
 export default function EventHighlight() {
@@ -15,6 +16,7 @@ export default function EventHighlight() {
         <div id="smooth-content">
           <main>
             <Breadcrumb title="Event Highlight" />
+            <EventHighlightArea />
           </main>
           <FooterOne />
         </div>

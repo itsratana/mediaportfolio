@@ -4,7 +4,7 @@ import menu_data from "./menu_data";
  
 
 export default function NavMenu() {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>, link: string) => {
     if (link.startsWith('#')) {
       e.preventDefault();
       const element = document.querySelector(link);
@@ -18,7 +18,7 @@ export default function NavMenu() {
       <ul>
         {menu_data.map((item, i) => (
           <li key={i} className={`${item.has_dropdown && "has-dropdown"}`}>
-            <a href={item.link} onClick={(e) => handleClick(e, item.link)}>{item.title}</a>
+            <button className="text-black" onClick={(e) => handleClick(e, item.link)}>{item.title}</button>
             {item.has_dropdown &&
               <ul className="sub-menu">
                 {item.sub_menus?.map((sub_menu, index) => (
