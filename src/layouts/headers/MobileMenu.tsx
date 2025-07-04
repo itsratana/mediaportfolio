@@ -15,7 +15,15 @@ export default function MobileMenu() {
       setNavTitle(menu);
     }
   };
-
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
+    if (link.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(link);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
 
   return (
     <>
@@ -25,7 +33,7 @@ export default function MobileMenu() {
           <ul>
             {menu_data.map((item, i) => (
               <li key={i} className={`${item.has_dropdown && "has-dropdown"} ${navTitle === item.title ? "dropdown-opened" : ""}`}>
-                <Link to={item.link} className="linkstyle">{item.title}</Link>
+                <a href={item.link} className="linkstyle" onClick={(e) => handleClick(e, item.link)}>{item.title}</a>
                 {item.has_dropdown &&
                   <>
                     <ul className="sub-menu" style={{ display: navTitle === item.title ? "block" : "none" }}>

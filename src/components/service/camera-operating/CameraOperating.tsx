@@ -15,8 +15,15 @@ const portfolio_data:DataType[] = [
     id: 1,
     col: "6",
     video: "https://www.youtube.com/watch?v=CjzbxD37dBA",
-    title: "My role in this project is Operating Camera for filming this Music Video",
+    title: "Music Video Camera Operating",
     category: "Music Video",
+  },
+  {
+    id: 2,
+    col: "6",
+    video: "https://www.youtube.com/watch?v=3MBcNov7a4w",
+    title: "TVC Camera Operating",
+    category: "Sport",
   },
 ];
 

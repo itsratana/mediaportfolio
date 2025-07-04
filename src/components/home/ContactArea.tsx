@@ -1,18 +1,18 @@
  
-import  { useState } from 'react'
+// import  { useState } from 'react'
 
 export default function ContactArea() {
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [subject, setSubject] = useState('');
+  // const [message, setMessage] = useState('');
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    // Add form submission logic here
-    console.log('Form submitted:', { name, email, subject, message });
-  };
+  // const handleSubmit = (e: any) => {
+  //   e.preventDefault();
+  //   // Add form submission logic here
+  //   console.log('Form submitted:', { name, email, subject, message });
+  // };
 
 
   return (
@@ -31,20 +31,20 @@ export default function ContactArea() {
               <div className="contact-content-part  wow fadeInUp delay-0-2s">
 
                 <div className="single-contact wow fadeInUp" data-wow-delay=".2s">
-                  <span className="circle-btn">
+                  {/* <span className="circle-btn">
                     <i className="ri-map-pin-line"></i>
-                  </span>
-                  <h2>our office:</h2>
-                  <p>Jurain,Dhaka Bangladesh</p>
+                  </span> */}
+                  <h2>Contact Information</h2>
+                  <p>Please feel free to contact me via Telegram or through information below</p>
                 </div>
 
 
                 <div className="single-contact wow fadeInUp" data-wow-delay=".4s">
                   <span className="circle-btn">
-                    <i className="ri-headphone-line"></i>
+                    <i className="ri-phone-line"></i>
                   </span>
                   <h2>contact number:</h2>
-                  <p>+1234321321</p>
+                  <p>+855 78 487 151</p>
                 </div>
 
 
@@ -52,12 +52,12 @@ export default function ContactArea() {
                   <span className="circle-btn">
                     <i className="ri-mail-line"></i>
                   </span>
-                  <h2>Email us:</h2>
-                  <p>websitename@mail.com</p>
+                  <h2>Email:</h2>
+                  <p>rithratana.hang@mail.com</p>
                 </div>
 
 
-                <div className="single-contact wow fadeInUp" data-wow-delay=".6s">
+                {/* <div className="single-contact wow fadeInUp" data-wow-delay=".6s">
                   <h2>Socials</h2>
                   <div className="about-social">
                     <ul>
@@ -67,14 +67,25 @@ export default function ContactArea() {
                       <li><a target='_blank' href="https://github.com/jamilrayhan10"><i className="ri-github-line"></i></a></li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </div> 
 
-            <div className="col-lg-8">
+            <div className="col-lg-4">
               <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
-                <form id="contactForm" className="contact-form" onSubmit={handleSubmit}>
+                <div className="container">
+                  <div className="row justify-content-center text-center">
+                    <div className="single-contact wow fadeInUp" data-wow-delay=".4s">
+                      <h2>Telegram</h2>
+                    </div>
+                    <img src="public/assets/images/Telegram_logo.png" alt="" style={{ width: "267px" }}/>
+                    <a href="t.me/rratanaaa" className="theme-btn mt-5">
+                      Contact Me
+                    </a>
+                  </div>
+                </div>
+                {/* <form id="contactForm" className="contact-form" onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
@@ -157,7 +168,7 @@ export default function ContactArea() {
                       <p className="input-error">Sorry, Message could not send! Please try again.</p>
                     </div>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
 
