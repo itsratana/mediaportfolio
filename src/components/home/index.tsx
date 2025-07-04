@@ -18,11 +18,13 @@ export default function Home() {
   useEffect(() => {
     const targetId = localStorage.getItem('scrollTo');
     if (targetId) {
-      const el = document.getElementById(targetId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-      localStorage.removeItem('scrollTo'); // clean up
+      setTimeout(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior:'smooth', block: 'center' });
+          localStorage.removeItem('scrollTo'); // clean up
+        }
+      }, 300);
     }
   }, []);  
   return (
