@@ -79,7 +79,7 @@ export default function ContactArea() {
                     <div className="single-contact wow fadeInUp" data-wow-delay=".4s">
                       <h2>Telegram</h2>
                     </div>
-                    <img src="public/assets/images/Telegram-logo.png" alt="" style={{ width: "267px" }}/>
+                    <img src="assets/images/Telegram-logo.png" alt=""/>
                     <a href="http://t.me/rratanaaa" className="theme-btn mt-5">
                       Contact Me
                     </a>
