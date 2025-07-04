@@ -7,7 +7,6 @@ import FooterOne from '../../layouts/footers/FooterOne';
 import VideoPopup from '../../modals/VideoPopup';
 import ScrollTop from '../common/ScrollTop';
 import ScrollToTop from '../common/ScrollToTop';
-import CustomCursor from '../common/CustomCursor';
 import BlogDetailsArea from '../blog-details/BlogDetailsArea';
 import ResumeArea from '../about/ResumeArea';
 import SkillArea from '../about/SkillArea';
@@ -51,7 +50,6 @@ export default function Blog() {
 
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   )
 }

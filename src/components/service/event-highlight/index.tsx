@@ -4,7 +4,6 @@ import FooterOne from '../../../layouts/footers/FooterOne'
 import ScrollTop from '../../common/ScrollTop'
 import ScrollToTop from '../../common/ScrollToTop'
 import HeaderTwo from '../../../layouts/headers/HeaderTwo'
-import CustomCursor from '../../common/CustomCursor'
 import EventHighlightArea from './EventHighlightArea'
 import SectionTitle from '../../common/SectionTitle'
 
@@ -26,7 +25,6 @@ export default function EventHighlight() {
 
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   )
 }

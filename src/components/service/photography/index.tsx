@@ -6,7 +6,6 @@ import ScrollToTop from '../../common/ScrollToTop'
 import HeaderTwo from '../../../layouts/headers/HeaderTwo'
 import PhotographyArea from './photography'
 import SectionTitle from '../../common/SectionTitle'
-import CustomCursor from '../../common/CustomCursor'
 
 export default function Photography() {
     return (
@@ -25,7 +24,6 @@ export default function Photography() {
 
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   )
 }

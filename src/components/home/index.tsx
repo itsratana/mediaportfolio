@@ -9,7 +9,7 @@ import ContactArea from "./ContactArea";
 import HeaderOne from "../../layouts/headers/HeaderOne";
 import FooterHome from "../../layouts/footers/FooterHome";
 import ScrollTop from "../common/ScrollTop";
-import CustomCursor from "../common/CustomCursor";
+//import CustomCursor from "../common/CustomCursor";
 import ScrollToTop from "../common/ScrollToTop";
 import SkillArea from "../about/SkillArea";
 import { useEffect } from "react";
@@ -58,7 +58,6 @@ export default function Home() {
       </div>
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   );
 }

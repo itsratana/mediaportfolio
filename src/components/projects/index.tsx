@@ -1,7 +1,7 @@
 import FooterOne from "../../layouts/footers/FooterOne";
 import HeaderProject from "../../layouts/headers/HeaderProject";
 import Breadcrumb from "../common/Breadcrumb";
-import CustomCursor from "../common/CustomCursor";
+//import CustomCursor from "../common/CustomCursor";
 import ScrollTop from "../common/ScrollTop";
 import ScrollToTop from "../common/ScrollToTop";
 import SectionTitle from "../common/SectionTitle";
@@ -33,7 +33,6 @@ export default function Projects() {
       </div>
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   );
 }
