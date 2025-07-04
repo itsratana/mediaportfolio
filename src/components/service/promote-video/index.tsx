@@ -5,7 +5,6 @@ import ScrollTop from '../../common/ScrollTop'
 import ScrollToTop from '../../common/ScrollToTop'
 import HeaderTwo from '../../../layouts/headers/HeaderTwo'
 import PromoteVideoArea from './PromoteVideoArea'
-import CustomCursor from '../../common/CustomCursor'
 import SectionTitle from '../../common/SectionTitle'
 
 export default function PromoteVideo() {
@@ -25,7 +24,6 @@ export default function PromoteVideo() {
 
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   )
 }

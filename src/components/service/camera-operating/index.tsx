@@ -7,8 +7,6 @@ import HeaderTwo from '../../../layouts/headers/HeaderTwo'
 import CameraOperatingArea from './CameraOperating'
 import SectionTitle from '../../common/SectionTitle'
 
-import CustomCursor from '../../common/CustomCursor'
-
 export default function CameraOperating() {
     return (
     <>
@@ -26,7 +24,6 @@ export default function CameraOperating() {
 
       <ScrollToTop />
       <ScrollTop />
-      <CustomCursor />
     </>
   )
 }

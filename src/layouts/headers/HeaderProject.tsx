@@ -6,7 +6,7 @@ export default function HeaderProject() {
 
   const handleBackToHome = () => {
     // window.history.back();
-    localStorage.setItem("scrollTo", "service");
+    localStorage.setItem("scrollTo", "portfolio");
     window.location.href = "/";
   };
 
