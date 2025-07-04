@@ -1,5 +1,5 @@
- 
 import { useState } from "react";
+import { Link } from "react-router-dom";
 //import ImagePopup from "../../modals/ImagePopup";
 import "react-18-image-lightbox/style.css";
 // import ReactPlayerModule from "react-player";
@@ -13,7 +13,7 @@ interface DataType {
   category: string;
 }
 
-const portfolio_data:DataType[] = [
+const portfolio_data: DataType[] = [
   {
     id: 1,
     col: "4",
@@ -59,23 +59,33 @@ export default function PortfolioArea() {
       <div className="projects-area" id="portfolio">
         <div className="container">
           <div className="row">
-              <div className="col-xl-12 col-lg-12">
-                <div className="section-title wow fadeInUp delay-0-2s">
-                  <h2>Projects Highlight</h2>
-                </div>
+            <div className="col-xl-12 col-lg-12">
+              <div className="section-title wow fadeInUp delay-0-2s">
+                <h2>Projects Highlight</h2>
               </div>
             </div>
           </div>
+        </div>
         <div className="container-fluid">
           <div className="row g-4 portfolio-grid">
             {portfolio_data.map((item, i) => (
-              <div key={i} className={`col-md-6 col-xl-${item.col} portfolio-item`}>
-                <div onClick={() => handleVideoPopup(item.video)} style={{ cursor: "pointer" }}>
+              <div
+                key={i}
+                className={`col-md-6 col-xl-${item.col} portfolio-item`}
+              >
+                <div
+                  onClick={() => handleVideoPopup(item.video)}
+                  style={{ cursor: "pointer" }}
+                >
                   <div className="portfolio-box">
                     <img
                       src={getYouTubeThumbnail(item.video)}
                       alt={item.title}
-                      style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        borderRadius: "8px",
+                      }}
                     />
                     <span className="portfolio-category">{item.category}</span>
                     <div className="portfolio-caption">
@@ -85,6 +95,11 @@ export default function PortfolioArea() {
                 </div>
               </div>
             ))}
+            <div className="see-more wow fadeInUp delay-0-4s justify-content-center text-center">
+              <Link to="/projects" className="theme-btn">
+                See More
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -92,16 +107,26 @@ export default function PortfolioArea() {
       {/* Video Modal */}
       {isOpen && currentVideo && (
         <div className="video-popup-overlay" onClick={() => setIsOpen(false)}>
-          <div className="video-popup-content" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="video-popup-content"
+            onClick={(e) => e.stopPropagation()}
+          >
             <iframe
               width="100%"
               height="100%"
-              src={`https://www.youtube.com/embed/${extractVideoId(currentVideo)}?autoplay=1&controls=1`}
+              src={`https://www.youtube.com/embed/${extractVideoId(
+                currentVideo
+              )}?autoplay=1&controls=1`}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
-            <button className="video-popup-close" onClick={() => setIsOpen(false)}>✖</button>
+            <button
+              className="video-popup-close"
+              onClick={() => setIsOpen(false)}
+            >
+              ✖
+            </button>
           </div>
         </div>
       )}

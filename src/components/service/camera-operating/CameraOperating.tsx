@@ -46,16 +46,7 @@ export default function CameraOperatingArea() {
 
   return (
     <>
-      <div className="projects-area" id="portfolio">
-        <div className="container">
-          <div className="row">
-              <div className="col-xl-12 col-lg-12">
-                <div className="section-title wow fadeInUp delay-0-2s">
-                  <h2>Projects Highlight</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="projects-padding-btm" id="portfolio">
         <div className="container">
           <div className="row g-4 portfolio-grid justify-content-center">
             {portfolio_data.map((item, i) => (

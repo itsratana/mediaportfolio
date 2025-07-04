@@ -6,6 +6,7 @@ import ScrollToTop from '../../common/ScrollToTop'
 import HeaderTwo from '../../../layouts/headers/HeaderTwo'
 import CustomCursor from '../../common/CustomCursor'
 import EventHighlightArea from './EventHighlightArea'
+import SectionTitle from '../../common/SectionTitle'
 
 
 export default function EventHighlight() {
@@ -15,7 +16,8 @@ export default function EventHighlight() {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <Breadcrumb title="Event Highlight" />
+            <Breadcrumb title="Event Highlight" title_2="Transform your special occasions into cinematic memories. I capture the energy, emotion, and essence of your events, whether it's a wedding, concert, corporate function, or private gathering, and turn them into visually engaging highlight reels you can relive and share."/>
+            <SectionTitle title="Reels Highlight" />
             <EventHighlightArea />
           </main>
           <FooterOne />

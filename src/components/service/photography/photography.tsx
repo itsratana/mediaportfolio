@@ -89,10 +89,7 @@ export default function PhotographyArea() {
   return (
     <>
 
-      <div className="projects-area" id="portfolio">
-        <div className="custom-icon">
-          <li> Picture </li>
-        </div>
+      <div className="projects-padding-btm" id="portfolio">
         <div className="container-fluid">
           <div className="row g-4 portfolio-grid">
             {portfolio_data.map((item, i) => (

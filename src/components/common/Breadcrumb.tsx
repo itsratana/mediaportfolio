@@ -1,5 +1,5 @@
  
-export default function Breadcrumb({ title, style_2, style_3, style_4 }: any) {
+export default function Breadcrumb({ title, title_2, style_2, style_3, style_4 }: any) {
   return (
     <>
       <section className="single-page-hero-area">
@@ -7,8 +7,9 @@ export default function Breadcrumb({ title, style_2, style_3, style_4 }: any) {
           <div className="row align-items-center">
             <div className="col-lg-12">
               <h2>{title}</h2>
+              <p>{title_2}</p>
               {style_2 &&
-                <p>A Collection of My Latest Works and Achievements: Discover the Projects that Define My Passion and Skills</p>
+                <p>A Collection of My Works and Achievements: Discover the Projects that Define My Passion and Skills</p>
               }
               {style_3 &&
                 <p>Fill out the form below to get in touch with me. I am always excited to hear about new opportunities and I will do my best to respond to your inquiry within 24 hours.</p>
