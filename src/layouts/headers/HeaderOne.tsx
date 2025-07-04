@@ -21,7 +21,7 @@ export default function HeaderOne() {
                 <div className="col-xl-2 col-lg-2 col-md-6 col-6 col-sm-3">
                   <div className="logo-area">
                     <div className="logo hero-content">
-                      <a href="/">Ratana</a>
+                      <a href="/"><img src="/assets/mainlogoicon.png" style={{ width: "170px" }}/></a>
                     </div>
                   </div>
                 </div>

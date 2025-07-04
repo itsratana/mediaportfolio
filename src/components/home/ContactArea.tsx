@@ -41,7 +41,7 @@ export default function ContactArea() {
 
                 <div className="single-contact wow fadeInUp" data-wow-delay=".4s">
                   <span className="circle-btn">
-                    <i className="ri-phone-line"></i>
+                    <i className="ri-phone-fill"></i>
                   </span>
                   <h2>contact number:</h2>
                   <p>+855 78 487 151</p>
