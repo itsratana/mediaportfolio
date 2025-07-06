@@ -17,16 +17,22 @@ export default function Projects() {
         <div id="smooth-content">
           <main>
             <Breadcrumb title="Projects" style_2={true} />
-            <SectionTitle title="Event Highlight" />
-            <div className="projects-m-btm">
-              <EventHighlightArea />
+            <div className="projects-area" id="portfolio">
+              <SectionTitle title="Event Highlight" />
+              <div className="projects-m-btm">
+                <EventHighlightArea />
+              </div>
             </div>
-            <SectionTitle title="Promote Video" />
-            <div className="projects-m-btm">
-              <PromoteVideoArea />
+            <div className="projects-area" id="portfolio">
+              <SectionTitle title="Promote Video" />
+              <div className="projects-m-btm">
+                <PromoteVideoArea />
+              </div>
             </div>
-            <SectionTitle title="Camera Operating" />
-            <CameraOperatingArea />
+            <div className="projects-area" id="portfolio">
+              <SectionTitle title="Camera Operating" />
+              <CameraOperatingArea />
+            </div>
           </main>
           <FooterOne />
         </div>

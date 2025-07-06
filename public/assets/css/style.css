@@ -1616,7 +1616,9 @@ html {
     color: var(--black-color);
     margin-bottom: 15px;
 }
-
+.about-content{
+    font-size: 18px;
+}
 .about-counter-part p {
     color: var(--black-color);
     font-size: 12px;
