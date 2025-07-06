@@ -4,7 +4,6 @@ type SectionTitleProps = {
 
 export default function SectionTitle({ title }: SectionTitleProps) {
   return (
-    <div className="projects-area">
       <div className="container">
         <div className="row">
           <div className="col-xl-12 col-lg-12">
@@ -14,6 +13,5 @@ export default function SectionTitle({ title }: SectionTitleProps) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
