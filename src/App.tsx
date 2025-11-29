@@ -13,7 +13,9 @@ import EventHighlight from "./components/service/event-highlight";
 import PromoteVideo from "./components/service/promote-video";
 import Photography from "./components/service/photography";
 import CameraOperating from "./components/service/camera-operating";
-
+import VFC from "./components/company/vfc";
+import KiaCambodia from "./components/company/kia-cambodia";
+import AIGenerated from "./components/service/ai-generated";
 
 
 
@@ -30,7 +32,9 @@ const router = createBrowserRouter([
   { path: "/service/promote-video", element: <PromoteVideo /> },
   { path: "/service/photography", element: <Photography /> },
   { path: "/service/camera-operating", element: <CameraOperating /> },
-
+  { path: "/company/vfc", element: <VFC /> },
+  { path: "/company/kia-cambodia", element: <KiaCambodia /> },
+  { path: "/service/ai-generated", element: <AIGenerated /> },
 ]);
 
 

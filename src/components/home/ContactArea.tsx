@@ -172,6 +172,22 @@ export default function ContactArea() {
               </div>
             </div>
 
+            <div className="col-lg-4">
+              <div className="contact-form contact-form-area wow fadeInUp delay-0-4s">
+                <div className="container">
+                  <div className="row justify-content-center text-center">
+                    <div className="single-contact wow fadeInUp" data-wow-delay=".4s">
+                      <h2>LinkedIn</h2>
+                    </div>
+                    <img src="assets/images/LinkedIn-Icon.svg" alt=""/>
+                    <a href="https://www.linkedin.com/in/rithratana-hang/" className="theme-btn mt-5">
+                      Visit My Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
