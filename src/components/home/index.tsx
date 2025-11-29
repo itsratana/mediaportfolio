@@ -6,6 +6,7 @@ import PortfolioArea from "./PortfolioArea";
 // import TestimonoalArea from './TestimonoalArea'
 // import BlogArea from './BlogArea'
 import ContactArea from "./ContactArea";
+import CompanyArea from "./CompanyArea";
 import HeaderOne from "../../layouts/headers/HeaderOne";
 import FooterHome from "../../layouts/footers/FooterHome";
 import ScrollTop from "../common/ScrollTop";
@@ -40,6 +41,9 @@ export default function Home() {
             <section id="about">
               <AboutArea />
               <SkillArea />
+            </section>
+            <section id="company">
+              <CompanyArea />
             </section>
             <section id="service">
               <ServiceArea />

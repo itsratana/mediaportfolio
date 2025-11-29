@@ -56,6 +56,7 @@ export default function PortfolioArea() {
 
   return (
     <>
+      {/* Freelance Project */}
       <div className="projects-area" id="portfolio">
         <div className="container">
           <div className="row">

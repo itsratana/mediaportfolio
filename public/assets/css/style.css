@@ -1647,10 +1647,14 @@ h2.about-pre-title {
 * ----------------------------------------------------------------------------------------
 */
 .services-area {
-    padding-top: 100px;
+    padding-top: 0px;
     padding-bottom: 100px;
     background: var(--primary-color);
-
+}
+.company-worked-area {
+    padding-top: 100px;
+    padding-bottom: 0px;
+    background: var(--primary-color);
 }
 
 .service-item {
@@ -1971,6 +1975,7 @@ ul.extra-skills li i {
 */
 .projects-area {
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .projects-padding-btm {

@@ -8,6 +8,8 @@ import SectionTitle from "../common/SectionTitle";
 import EventHighlightArea from "../service/event-highlight/EventHighlightArea";
 import PromoteVideoArea from "../service/promote-video/PromoteVideoArea";
 import CameraOperatingArea from "../service/camera-operating/CameraOperating";
+import AIGeneratedArea from "../service/ai-generated/AIGenerated";
+import KiaCambodiaArea from "../company/kia-cambodia/KiaCambodiaArea";
 
 export default function Projects() {
   return (
@@ -32,6 +34,14 @@ export default function Projects() {
             <div className="projects-area" id="portfolio">
               <SectionTitle title="Camera Operating" />
               <CameraOperatingArea />
+            </div>
+            <div className="projects-area" id="portfolio">
+              <SectionTitle title="AI Generated Contents" />
+              <AIGeneratedArea />
+            </div>
+            <div className="projects-area" id="portfolio">
+              <SectionTitle title="Kia Cambodia Work Highlights" />
+              <KiaCambodiaArea />
             </div>
           </main>
           <FooterOne />

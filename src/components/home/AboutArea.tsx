@@ -4,7 +4,7 @@ const counter_data = [
   {
     id: 1,
     title: "Years of Freelancing Experience",
-    count: 2,
+    count: 3,
     cls: "plus",
   },
 ];
