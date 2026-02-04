@@ -33,11 +33,15 @@ export default function Projects() {
             </div>
             <div className="projects-area" id="portfolio">
               <SectionTitle title="Camera Operating" />
-              <CameraOperatingArea />
+              <div className="projects-m-btm">
+                <CameraOperatingArea />
+              </div>
             </div>
             <div className="projects-area" id="portfolio">
               <SectionTitle title="AI Generated Contents" />
-              <AIGeneratedArea />
+              <div className="projects-m-btm">
+                <AIGeneratedArea />
+              </div>
             </div>
             <div className="projects-area" id="portfolio">
               <SectionTitle title="Kia Cambodia Work Highlights" />
