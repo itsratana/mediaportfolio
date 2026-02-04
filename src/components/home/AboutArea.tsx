@@ -1,10 +1,18 @@
 import Count from "../common/Count";
 
+const START_DATE = new Date("2022-11-01");
+const NOW = new Date();
+
+const YEARS_EXPERIENCE = Math.floor(
+  (NOW.getTime() - START_DATE.getTime()) /
+    (1000 * 60 * 60 * 24 * 365.25)
+);
+
 const counter_data = [
   {
     id: 1,
     title: "Years of Freelancing Experience",
-    count: 3,
+    count: YEARS_EXPERIENCE,
     cls: "plus",
   },
 ];
@@ -22,7 +30,7 @@ export default function AboutArea() {
               <div className="about-content wow fadeInUp delay-0-2s">
                 <p className="">
                   I am Hang Rith Ratana, a freelance Videographer and Multimedia
-                  with over 2 years experience of freelancing with alternative
+                  with over {YEARS_EXPERIENCE} years experience of freelancing with alternative
                   client from different industries.
                   <br />
                   My journey began with a love for photography and volunteering
